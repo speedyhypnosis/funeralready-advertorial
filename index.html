@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="If Your Family Hasn't Done This Before a Funeral, It Could Cost Thousands" />
+  <meta property="og:description" content="Four professionally designed, print-ready memorial programs. One free. Three at $47 each. Instant download. No family should say goodbye without a program." />
+  <meta property="og:image" content="funeralready-preview.png" />
+  <meta property="og:url" content="https://funeralready.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>If Your Family Hasn't Done This Before a Funeral, It Could Cost Thousands | FuneralReady</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:        #1c1c1e;
+      --subink:     #4a4a4a;
+      --rule:       #ddd8d0;
+      --bg:         #f8f6f2;
+      --card:       #ffffff;
+      --accent:     #5b3a6e;
+      --accent2:    #f0ebf6;
+      --gold:       #9a7b2e;
+      --warm:       #fdf8f0;
+      --deep:       #1c1218;
+      --green:      #2e7d45;
+      --font-disp:  'Playfair Display', Georgia, serif;
+      --font-body:  'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.78;
+    }
+
+    /* DISCLOSURE */
+    .disclosure-bar {
+      background: var(--warm);
+      border-bottom: 1px solid var(--rule);
+      padding: 10px 20px;
+      font-size: 12px;
+      color: var(--subink);
+      text-align: center;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-bottom: 2px solid var(--ink);
+      padding: 18px 20px 14px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      max-width: 780px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .masthead-brand {
+      font-family: var(--font-disp);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .masthead-sep { color: var(--rule); font-size: 18px; }
+    .masthead-label {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 52px 20px 40px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: var(--font-disp);
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-deck {
+      font-size: 18px;
+      color: var(--subink);
+      max-width: 620px;
+      margin-bottom: 28px;
+      line-height: 1.65;
+    }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      color: #888;
+      flex-wrap: wrap;
+    }
+    .hero-meta strong { color: var(--ink); }
+
+    /* STAT BAR */
+    .stat-bar {
+      background: var(--accent);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-bar-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      display: block;
+      font-family: var(--font-disp);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .stat-label { font-size: 12px; opacity: .85; letter-spacing: .04em; }
+
+    /* ARTICLE */
+    .article {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+    .article p { margin-bottom: 22px; }
+    .article h2 {
+      font-family: var(--font-disp);
+      font-size: 1.65rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 48px 0 16px;
+    }
+    .article h3 {
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 36px 0 10px;
+    }
+
+    /* PULLQUOTE */
+    .pullquote {
+      border-left: 4px solid var(--accent);
+      margin: 36px 0;
+      padding: 18px 28px;
+      background: var(--accent2);
+      border-radius: 0 6px 6px 0;
+    }
+    .pullquote p {
+      font-family: var(--font-disp);
+      font-size: 1.2rem;
+      line-height: 1.55;
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* CONVO LIST */
+    .convo-list { list-style: none; padding: 0; margin: 0 0 24px; }
+    .convo-list li {
+      padding: 10px 0 10px 32px;
+      position: relative;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+      color: var(--subink);
+    }
+    .convo-list li:last-child { border-bottom: none; }
+    .convo-list li::before {
+      content: "♦";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 11px;
+      top: 14px;
+    }
+
+    /* COST TABLE */
+    .cost-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+    .cost-table th {
+      background: var(--ink);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .cost-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+    }
+    .cost-table tr:last-child td { border-bottom: none; }
+    .cost-table tr:nth-child(even) td { background: var(--warm); }
+    .price-high { color: #c0392b; font-weight: 600; }
+    .price-low  { color: var(--green); font-weight: 600; }
+
+    /* PROGRAM CARDS */
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 32px 0;
+    }
+    .program-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 24px 18px 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .program-card.free-card { border-top-color: var(--green); }
+    .program-card .prog-tag {
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--gold);
+    }
+    .program-card.free-card .prog-tag { color: var(--green); }
+    .program-card h3 {
+      font-family: var(--font-disp);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .program-card p {
+      font-size: 14px;
+      color: var(--subink);
+      flex-grow: 1;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .program-card .prog-price {
+      font-size: 1.4rem;
+      font-weight: 700;
+      font-family: var(--font-disp);
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .program-card.free-card .prog-price { color: var(--green); }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      transition: filter .15s, transform .1s;
+      border: none;
+      line-height: 1.3;
+    }
+    .btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .btn-green   { background: var(--green); color: #fff; width: 100%; }
+    .btn-purple  { background: var(--accent); color: #fff; width: 100%; }
+    .btn-gofund  { background: #02a95c; color: #fff; width: 100%; }
+    .btn-outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); width: 100%; }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      background: var(--deep);
+      padding: 52px 20px;
+    }
+    .testimonials-inner { max-width: 780px; margin: 0 auto; }
+    .testimonials h2 {
+      font-family: var(--font-disp);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .testi-card {
+      background: #2a1f2e;
+      border-left: 3px solid var(--accent);
+      padding: 22px;
+      border-radius: 4px;
+    }
+    .testi-card p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: #ddd;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+    .testi-stars { color: #f5a623; font-size: 13px; }
+
+    /* GOFUNDME STRIP */
+    .gofund-strip {
+      background: var(--warm);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .gofund-strip-inner { max-width: 580px; margin: 0 auto; }
+    .gofund-strip h3 {
+      font-family: var(--font-disp);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .gofund-strip p {
+      font-size: 15px;
+      color: var(--subink);
+      margin-bottom: 20px;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: var(--accent2);
+      border-top: 3px solid var(--accent);
+      padding: 56px 20px;
+      text-align: center;
+    }
+    .final-cta-inner { max-width: 580px; margin: 0 auto; }
+    .final-cta h2 {
+      font-family: var(--font-disp);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .final-cta p { color: var(--subink); margin-bottom: 32px; font-size: 16px; }
+    .final-cta-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 20px;
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 12px;
+      color: #999;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 520px) {
+      .hero h1 { font-size: 1.75rem; }
+      .stat-bar-inner { gap: 24px; }
+      .stat-num { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- DISCLOSURE -->
+<div class="disclosure-bar">
+  📋 <strong>Disclosure:</strong> FuneralReady.com is owned and operated by Van Beard. This page describes products he sells directly and a GoFundMe campaign he runs. No outside affiliate relationships exist on this page.
+</div>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <span class="masthead-brand">FuneralReady.com</span>
+  <span class="masthead-sep">|</span>
+  <span class="masthead-label">Family Planning Guide</span>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <p class="hero-eyebrow">Funeral Planning · What Families Need to Know</p>
+  <h1>If Your Family Hasn't Done This Before a Funeral, <em>It Could Cost Thousands</em></h1>
+  <p class="hero-deck">Most families only learn this after it's too late. Here's what 20 years of memorial design taught me — and the simple steps that change everything.</p>
+  <div class="hero-meta">
+    <span>By <strong>Van Beard</strong>, Founder of FuneralReady.com</span>
+    <span>·</span>
+    <span>6-minute read</span>
+  </div>
+</header>
+
+<!-- STAT BAR -->
+<div class="stat-bar">
+  <div class="stat-bar-inner">
+    <div class="stat-item">
+      <span class="stat-num">$9,400</span>
+      <span class="stat-label">Average U.S. funeral cost</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">72 hrs</span>
+      <span class="stat-label">Decisions made while grieving</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">2,000+</span>
+      <span class="stat-label">Programs created by Van Beard</span>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<article class="article">
+
+  <h2>Nobody Warns You About the Hidden Costs of an Unprepared Funeral</h2>
+  <p>Most families don't think about funeral planning until they're in the middle of a crisis. A phone call comes. Someone is gone. And suddenly, within 24 to 72 hours, you're making thousands of dollars worth of decisions while you're grieving.</p>
+  <p>That's when the costs add up fast. Rush printing. Last-minute decisions. No program. No plan. No idea what their loved one would have wanted.</p>
+
+  <div class="pullquote">
+    <p>"The families who prepared — even just a little — have a completely different experience than the families who didn't."</p>
+  </div>
+
+  <p>I've been designing memorial programs for over 20 years. I've served families across Seattle's Central District, Garfield High School alumni families, church communities, and families I've never met who found me online at 2 in the morning because they needed a program by tomorrow. What I've learned is consistent: a little preparation is the greatest gift you can give the people you love.</p>
+
+  <h2>What Funeral Homes Charge — vs. What It Should Cost</h2>
+
+  <table class="cost-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Funeral Home Price</th>
+        <th>FuneralReady Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Basic printed program</td>
+        <td class="price-high">$150 – $400</td>
+        <td class="price-low">$47 — instant download</td>
+      </tr>
+      <tr>
+        <td>Professional design, print-ready</td>
+        <td class="price-high">Included in markup</td>
+        <td class="price-low">Included at $47</td>
+      </tr>
+      <tr>
+        <td>Free program for families in need</td>
+        <td class="price-high">Not offered</td>
+        <td class="price-low">$0 — available now</td>
+      </tr>
+      <tr>
+        <td>Turnaround time</td>
+        <td class="price-high">2–5 days</td>
+        <td class="price-low">Instant download</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Funeral homes aren't doing anything dishonest. They're providing a service in a moment when families are too overwhelmed to shop around. But you can make this decision now, calmly, before that moment ever arrives.</p>
+
+  <!-- HERO IMAGE -->
+  <div style="max-width: 780px; margin: 0 auto 0; padding: 0 0 0;">
+    <img src="funeralready-preview.png" alt="Funeral Ready Programs — No Family Should Say Goodbye Without a Program" style="width: 100%; border-radius: 8px; display: block;" />
+  </div>
+
+  <h2>What FuneralReady Actually Offers</h2>
+  <p>Four professionally designed, print-ready programs — done completely for you. One is free for families in need. Three are $47 each, available for instant download.</p>
+
+  <!-- DFY CLARITY BOX -->
+  <div style="background: var(--accent2); border: 2px solid var(--accent); border-radius: 8px; padding: 22px 24px; margin: 0 0 32px;">
+    <p style="font-weight: 700; font-size: 1rem; color: var(--accent); margin-bottom: 10px;">Important — please read before purchasing:</p>
+    <p style="margin-bottom: 10px;">These programs are <strong>complete and ready to print exactly as designed.</strong> The layout, scripture, tribute text, poem, and order of service are all included. <strong>Nothing to edit. Nothing to customize. Nothing to fill in.</strong> Download, print, and use immediately.</p>
+  </div>
+
+  <div class="programs-grid">
+
+    <div class="program-card free-card">
+      <span class="prog-tag">Free — For Families in Need</span>
+      <h3>Forever in Our Hearts</h3>
+      <p>Complete, print-ready memorial program. Design, scripture, and tribute text all included. Nothing to edit — download and print immediately.</p>
+      <div class="prog-price">$0</div>
+      <a class="btn btn-green" href="https://ko-fi.com/s/b12810569d" target="_blank">Download Free →</a>
+    </div>
+
+    <div class="program-card">
+      <span class="prog-tag">Done for You — Instant Download</span>
+      <h3>In Loving Memory</h3>
+      <p>Complete, print-ready one-page program. Professional design, scripture, and text all included. Nothing to edit — download and print immediately.</p>
+      <div class="prog-price">$47</div>
+      <a class="btn btn-purple" href="https://ko-fi.com/s/9d491916eb" target="_blank">Get This Program →</a>
+    </div>
+
+    <div class="program-card">
+      <span class="prog-tag">Done for You — Instant Download</span>
+      <h3>A Life Well Lived</h3>
+      <p>Complete, print-ready one-page program. Warm, dignified design with tribute text included. Nothing to edit — download and print immediately.</p>
+      <div class="prog-price">$47</div>
+      <a class="btn btn-purple" href="https://ko-fi.com/s/15bd891e77" target="_blank">Get This Program →</a>
+    </div>
+
+    <div class="program-card">
+      <span class="prog-tag">Done for You — Instant Download</span>
+      <h3>Celebrating a Life</h3>
+      <p>Complete, print-ready one-page program. Joyful, uplifting design with tribute text included. Nothing to edit — download and print immediately.</p>
+      <div class="prog-price">$47</div>
+      <a class="btn btn-purple" href="https://ko-fi.com/s/0af85f033b" target="_blank">Get This Program →</a>
+    </div>
+
+  </div>
+
+  <h2>The Conversation Your Family Needs to Have</h2>
+  <p>Nobody wants to sit around the dinner table talking about death. But here's the reframe: it's not a conversation about death. It's a conversation about love.</p>
+  <p>It's saying to the people you care about: <em>"I want to make sure that when the day comes, you're not scrambling. You're grieving. And that's all you should have to do."</em></p>
+  <p>These are the things worth talking about now:</p>
+
+  <ul class="convo-list">
+    <li>Do you want a traditional funeral service, a celebration of life, or something else?</li>
+    <li>What songs matter to you?</li>
+    <li>Is there a scripture, a poem, or a quote that represents your life?</li>
+    <li>Who do you want to speak?</li>
+    <li>What does a meaningful goodbye look like to you?</li>
+  </ul>
+
+  <p>None of this costs anything to discuss. But having it settled is worth everything to the people you leave behind.</p>
+
+  <h2>The Program Is the One Thing People Keep</h2>
+  <p>Flowers fade. Food gets eaten. But a funeral program gets kept. It gets tucked into Bibles. It gets framed. It gets pulled out years later when someone needs to remember a face, a name, a date.</p>
+
+  <div class="pullquote">
+    <p>"No family should have to say goodbye without a program. That's why FuneralReady exists."</p>
+  </div>
+
+  <p>When families come to me in crisis, the first thing I tell them is: let's take five minutes and do this right. Because the program you hold during the service is the one you'll hold twenty years from now.</p>
+
+</article>
+
+<!-- GOFUNDME STRIP -->
+<div class="gofund-strip">
+  <div class="gofund-strip-inner">
+    <h3>Help Us Reach More Families</h3>
+    <p>FuneralReady's GoFundMe campaign — <em>"No Family Should Say Goodbye Without a Program"</em> — helps provide free programs to families who can't afford even a $47 purchase in the middle of a crisis.</p>
+    <a class="btn btn-gofund" href="https://www.gofundme.com/f/funeralready" target="_blank" style="max-width:300px; margin:0 auto; display:block;">Support the Mission →</a>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <h2>What Families Have Said</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p>"I found FuneralReady at midnight and had a program ready to print within minutes. I don't know what I would have done without it."</p>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-card">
+        <p>"The program was beautiful. People kept coming up to us at the service saying how meaningful it was. It meant everything to our family."</p>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-card">
+        <p>"The funeral home wanted $350 for a basic program. We paid $47 and got something more beautiful and personal than anything they showed us."</p>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <h2>Take One Step Today. Your Family Will Thank You.</h2>
+    <p>Four programs. One free. Three at $47 each. All professionally designed, print-ready, and available for instant download.</p>
+    <div class="final-cta-btns">
+      <a class="btn btn-green" href="https://ko-fi.com/s/b12810569d" target="_blank">Get the Free Program →</a>
+      <a class="btn btn-purple" href="https://ko-fi.com/vanbeard" target="_blank">See All Programs on Ko-fi →</a>
+      <a class="btn btn-gofund" href="https://www.gofundme.com/f/funeralready" target="_blank">Support on GoFundMe →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>Van Beard</strong> is a Seattle-based memorial design specialist with 20+ years of experience and 2,000+ funeral programs created for families across the country. He is the founder of <a href="https://funeralready.com" style="color:var(--accent)">FuneralReady.com</a> and a proud Garfield High School alumnus serving Seattle's Central District community.</p>
+  <p style="margin-top:10px">Contact: (206) 486-0508 &nbsp;·&nbsp; funeralready.com</p>
+  <p style="margin-top:10px; color:#bbb;">FuneralReady.com is owned and operated by Van Beard. All products are sold directly through Ko-fi. The GoFundMe campaign is run by Van Beard to support families in need.</p>
+</footer>
+
+</body>
+</html>
