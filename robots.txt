@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://funeralready.com/sitemap.xml
+Sitemap: https://speedyhypnosis.github.io/funeralready-advertorial/sitemap.xml
