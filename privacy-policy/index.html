@@ -1,483 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy & Terms of Service | FuneralReady.com</title>
-  <meta name="description" content="Privacy Policy and Terms of Service for FuneralReady.com, owned and operated by Van Beard Design, Seattle, Washington. Effective April 2, 2026.">
-  <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="https://funeralready.com/privacy-policy/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — WebsitesByVan</title>
+  <meta name="description" content="Privacy Policy for WebsitesByVan by Van Beard Design. Learn how we collect, use, and protect your personal information." />
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="WebsitesByVan" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <link rel="canonical" href="https://websitesbyvan.com/privacy-policy/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy Policy — WebsitesByVan" />
+  <meta property="og:url" content="https://websitesbyvan.com/privacy-policy/" />
+  <meta property="og:site_name" content="WebsitesByVan" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --ink:       #1c1c1e;
-      --subink:    #4a4a4a;
-      --rule:      #ddd8d0;
-      --bg:        #f8f6f2;
-      --card:      #ffffff;
-      --accent:    #5b3a6e;
-      --accent2:   #f0ebf6;
-      --gold:      #9a7b2e;
-      --warm:      #fdf8f0;
-      --font-disp: 'Playfair Display', Georgia, serif;
-      --font-body: 'Inter', system-ui, sans-serif;
+      --navy:    #0D1B2A;
+      --navy2:   #0f2340;
+      --gold:    #C9A84C;
+      --gold2:   #b8922e;
+      --white:   #ffffff;
+      --offwhite:#f5f7fa;
+      --gray:    #d1d5db;
+      --text:    #1e293b;
+      --muted:   #64748b;
     }
 
     html { scroll-behavior: smooth; }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.75;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      font-size: 18px;
+      line-height: 1.7;
     }
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* MASTHEAD */
-    .masthead {
-      border-bottom: 2px solid var(--ink);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
+    .gold-bar {
+      height: 5px;
+      background: linear-gradient(90deg, #C9A84C, #F0D080, #C9A84C);
     }
-    .masthead-inner {
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 5px; left: 0; right: 0;
+      background: var(--navy);
+      z-index: 1000;
       display: flex;
       align-items: center;
-      gap: 12px;
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 14px 20px;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      height: 56px;
+      border-bottom: 1px solid rgba(201,168,76,0.3);
     }
-    .masthead-brand {
-      font-family: var(--font-disp);
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--ink);
-      text-decoration: none;
-    }
-    .masthead-sep { color: var(--rule); font-size: 16px; }
-    .masthead-label {
-      font-size: 10.5px;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      flex: 1;
-    }
-    .masthead-back {
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--accent);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .masthead-back:hover { text-decoration: underline; }
 
-    /* PAGE HEADER */
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .nav-back {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--gold); }
+
+    /* ── PAGE HEADER ── */
     .page-header {
-      background: var(--accent);
-      padding: 56px 20px 48px;
+      background: var(--navy);
+      padding: 90px 1.5rem 48px;
       text-align: center;
     }
-    .page-header h1 {
-      font-family: var(--font-disp);
-      font-size: 2rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-    .page-header .meta {
-      font-size: 13px;
-      color: rgba(255,255,255,.75);
-      letter-spacing: .04em;
-    }
 
-    /* TOC */
-    .toc {
-      background: var(--accent2);
-      border: 1px solid var(--rule);
-      border-radius: 8px;
-      padding: 24px 28px;
-      margin: 40px 0;
-    }
-    .toc h2 {
-      font-family: var(--font-disp);
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 14px;
-      letter-spacing: .04em;
+    .page-header p {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
     }
-    .toc ol {
-      padding-left: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px 32px;
-    }
-    @media (max-width: 520px) { .toc ol { grid-template-columns: 1fr; } }
-    .toc li { font-size: 14px; }
-    .toc a { color: var(--accent); }
 
-    /* CONTENT */
+    .page-header h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .last-updated {
+      color: var(--gray);
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+    }
+
+    /* ── CONTENT ── */
     .content {
       max-width: 780px;
       margin: 0 auto;
-      padding: 0 20px 80px;
+      padding: 56px 1.5rem 80px;
     }
 
-    /* PART DIVIDER */
-    .part-divider {
-      border-top: 2px solid var(--ink);
-      margin: 56px 0 40px;
-      padding-top: 32px;
+    .summary-box {
+      background: var(--offwhite);
+      border-left: 4px solid var(--gold);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
     }
-    .part-label {
-      font-size: 11px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .part-divider h2 {
-      font-family: var(--font-disp);
-      font-size: 1.9rem;
+
+    .summary-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
       font-weight: 700;
-      color: var(--ink);
+      margin-bottom: 0.75rem;
+      color: var(--navy);
     }
 
-    /* SECTION */
-    .policy-section {
-      margin-bottom: 40px;
-      scroll-margin-top: 80px;
+    .summary-box ul { list-style: none; padding: 0; }
+
+    .summary-box ul li {
+      padding: 0.3rem 0 0.3rem 1.5rem;
+      position: relative;
+      color: var(--text);
+      font-size: 1rem;
     }
+
+    .summary-box ul li::before {
+      content: '→';
+      color: var(--gold2);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    .policy-section { margin-bottom: 2.5rem; }
+
+    .policy-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--offwhite);
+    }
+
     .policy-section h3 {
-      font-family: var(--font-disp);
+      font-family: 'Playfair Display', serif;
       font-size: 1.15rem;
       font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 12px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--rule);
+      color: var(--navy2);
+      margin: 1.25rem 0 0.5rem;
     }
+
     .policy-section p {
-      margin-bottom: 14px;
-      color: var(--subink);
-    }
-    .policy-section ul, .policy-section ol {
-      padding-left: 22px;
-      margin-bottom: 14px;
-      color: var(--subink);
-    }
-    .policy-section li { margin-bottom: 6px; }
-
-    /* IMPORTANT CALLOUT */
-    .callout {
-      background: #fff8e1;
-      border-left: 4px solid var(--gold);
-      border-radius: 0 6px 6px 0;
-      padding: 16px 20px;
-      margin: 16px 0;
-    }
-    .callout p {
-      color: var(--ink);
-      font-weight: 500;
-      margin: 0;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
     }
 
-    /* CONTACT BLOCK */
-    .contact-block {
-      background: var(--warm);
-      border: 1px solid var(--rule);
-      border-radius: 8px;
-      padding: 20px 24px;
-      margin-top: 16px;
-    }
-    .contact-block p { margin: 0; color: var(--subink); line-height: 1.9; }
+    .policy-section ul { list-style: none; margin: 0.5rem 0 0.75rem 0; }
 
-    /* FOOTER */
-    footer {
-      background: var(--ink);
-      color: rgba(255,255,255,.6);
+    .policy-section ul li {
+      padding: 0.25rem 0 0.25rem 1.5rem;
+      position: relative;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .policy-section ul li::before {
+      content: '•';
+      color: var(--gold2);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2rem;
+      margin-top: 3rem;
       text-align: center;
-      padding: 28px 20px;
-      font-size: 13px;
     }
-    footer a { color: rgba(255,255,255,.75); }
+
+    .contact-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-box p { color: var(--gray); font-size: 1rem; margin-bottom: 0.4rem; }
+    .contact-box a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-copy { color: var(--muted); font-size: 0.82rem; margin-top: 0.5rem; }
+    .footer-copy a { color: var(--muted); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .content { padding: 40px 1.25rem 60px; }
+    }
   </style>
 </head>
 <body>
 
-<!-- MASTHEAD -->
-<div class="masthead">
-  <div class="masthead-inner">
-    <a href="index.html" class="masthead-brand">🕊️ FuneralReady.com</a>
-    <span class="masthead-sep">|</span>
-    <span class="masthead-label">Legal</span>
-    <a href="index.html" class="masthead-back">← Back to Site</a>
-  </div>
-</div>
+  <div class="gold-bar"></div>
 
-<!-- PAGE HEADER -->
-<div class="page-header">
-  <h1>Privacy Policy &amp; Terms of Service</h1>
-  <p class="meta">Effective Date: April 2, 2026 &nbsp;·&nbsp; FuneralReady.com &nbsp;·&nbsp; Van Beard Design &nbsp;·&nbsp; Seattle, Washington</p>
-</div>
+  <!-- NAV -->
+  <nav>
+    <a href="../" class="nav-logo">WebsitesByVan</a>
+    <a href="../" class="nav-back">← Back to Home</a>
+  </nav>
 
-<!-- CONTENT -->
-<div class="content">
-
-  <p style="margin-top:36px; color:var(--subink);">This document governs your use of FuneralReady.com and the purchase of our done-for-you funeral program PDF. Please read it carefully before making a purchase. FuneralReady.com is owned and operated by Van Beard Design, based in Seattle, Washington. By visiting FuneralReady.com and purchasing our digital products, you agree to the terms outlined in this document.</p>
-  <p style="color:var(--subink);">If you have any questions, contact us at: <a href="mailto:info@funeralready.com">info@funeralready.com</a></p>
-
-  <!-- TABLE OF CONTENTS -->
-  <div class="toc">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#privacy-policy">Privacy Policy</a></li>
-      <li><a href="#information-we-collect">Information We Collect</a></li>
-      <li><a href="#how-we-use">How We Use Your Information</a></li>
-      <li><a href="#payment-processing">Payment Processing</a></li>
-      <li><a href="#digital-delivery">Digital Product Delivery</a></li>
-      <li><a href="#data-retention">Data Retention</a></li>
-      <li><a href="#cookies">Cookies</a></li>
-      <li><a href="#third-party">Third-Party Services</a></li>
-      <li><a href="#childrens-privacy">Children's Privacy</a></li>
-      <li><a href="#your-rights">Your Rights</a></li>
-      <li><a href="#terms-of-service">Terms of Service</a></li>
-      <li><a href="#about-product">About the Product</a></li>
-      <li><a href="#no-refunds">No Refund Policy</a></li>
-      <li><a href="#license">License &amp; Permitted Use</a></li>
-      <li><a href="#intellectual-property">Intellectual Property</a></li>
-      <li><a href="#governing-law">Governing Law</a></li>
-    </ol>
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p>Van Beard Design</p>
+    <h1>Privacy Policy</h1>
+    <span class="last-updated">Last Updated: June 2026</span>
   </div>
 
-  <!-- PART ONE: PRIVACY POLICY -->
-  <div class="part-divider" id="privacy-policy">
-    <p class="part-label">Part One</p>
-    <h2>Privacy Policy</h2>
-    <p style="color:var(--subink); margin-top:8px;">Last Updated: April 2, 2026</p>
-  </div>
+  <!-- CONTENT -->
+  <div class="content">
 
-  <div class="policy-section" id="information-we-collect">
-    <h3>1. Information We Collect</h3>
-    <p><strong>Information You Provide</strong></p>
-    <p>When you visit FuneralReady.com or make a purchase through our Ko-fi storefront, we may collect the following:</p>
-    <ul>
-      <li>Your name and email address provided during checkout</li>
-      <li>Payment information processed securely by Ko-fi and Stripe (we do not store your payment card details)</li>
-      <li>Any messages or inquiries you send to <a href="mailto:info@funeralready.com">info@funeralready.com</a></li>
-    </ul>
-    <p><strong>Information Collected Automatically</strong></p>
-    <p>When you visit our website, we may automatically collect:</p>
-    <ul>
-      <li>Browser type and version</li>
-      <li>Pages visited and time spent on each page</li>
-      <li>Referring website or search terms</li>
-      <li>General geographic location based on IP address</li>
-    </ul>
-    <p>This information is collected through standard web analytics tools and is used only to improve our website and understand how visitors use it.</p>
-  </div>
-
-  <div class="policy-section" id="how-we-use">
-    <h3>2. How We Use Your Information</h3>
-    <p>We use the information we collect solely for the following purposes:</p>
-    <ul>
-      <li>To process and fulfill your digital product purchase</li>
-      <li>To deliver your purchased PDF download</li>
-      <li>To respond to your questions or support requests</li>
-      <li>To improve our website and product offerings</li>
-      <li>To communicate important updates about your purchase</li>
-    </ul>
-    <p>We do not sell, rent, trade, or share your personal information with third parties for marketing purposes. Ever.</p>
-  </div>
-
-  <div class="policy-section" id="payment-processing">
-    <h3>3. Payment Processing</h3>
-    <p>All payments are processed securely through Ko-fi, which uses Stripe as its payment processor. FuneralReady.com does not store, access, or process your credit card or debit card information directly. Your payment data is subject to Ko-fi's and Stripe's respective privacy policies and security standards.</p>
-  </div>
-
-  <div class="policy-section" id="digital-delivery">
-    <h3>4. Digital Product Delivery</h3>
-    <p>Your purchased funeral program PDF is delivered digitally through Ko-fi immediately after payment is confirmed. We do not ship physical products. Your email address is used solely to facilitate delivery and to provide purchase confirmation.</p>
-  </div>
-
-  <div class="policy-section" id="data-retention">
-    <h3>5. Data Retention</h3>
-    <p>We retain your email address and purchase information only as long as necessary to fulfill your order, respond to support inquiries, and comply with applicable legal obligations. You may request deletion of your personal information at any time by emailing <a href="mailto:info@funeralready.com">info@funeralready.com</a>.</p>
-  </div>
-
-  <div class="policy-section" id="cookies">
-    <h3>6. Cookies</h3>
-    <p>FuneralReady.com may use cookies and similar tracking technologies to improve your browsing experience and analyze website traffic. You may disable cookies in your browser settings. Disabling cookies will not affect your ability to purchase or download our products.</p>
-  </div>
-
-  <div class="policy-section" id="third-party">
-    <h3>7. Third-Party Services</h3>
-    <p>Our website and storefront rely on the following third-party services, each of which operates under its own privacy policy:</p>
-    <ul>
-      <li><strong>Ko-fi</strong> — digital storefront and payment processing (<a href="https://ko-fi.com" target="_blank" rel="noopener">ko-fi.com</a>)</li>
-      <li><strong>GitHub Pages</strong> — website hosting (<a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>)</li>
-    </ul>
-    <p>We encourage you to review the privacy policies of these services if you have questions about how they handle your data.</p>
-  </div>
-
-  <div class="policy-section" id="childrens-privacy">
-    <h3>8. Children's Privacy</h3>
-    <p>FuneralReady.com is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us at <a href="mailto:info@funeralready.com">info@funeralready.com</a>, and we will promptly delete it.</p>
-  </div>
-
-  <div class="policy-section" id="your-rights">
-    <h3>9. Your Rights</h3>
-    <p>Depending on your location, you may have the right to:</p>
-    <ul>
-      <li>Access the personal information we hold about you</li>
-      <li>Request correction of inaccurate information</li>
-      <li>Request deletion of your personal information</li>
-      <li>Opt out of any future marketing communications</li>
-    </ul>
-    <p>To exercise any of these rights, contact us at <a href="mailto:info@funeralready.com">info@funeralready.com</a>. We will respond to all requests within 30 days.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>10. Changes to This Privacy Policy</h3>
-    <p>We reserve the right to update this Privacy Policy at any time. Changes will be posted on this page with a revised effective date. Your continued use of FuneralReady.com after any changes constitutes your acceptance of the updated policy.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>11. Contact Us</h3>
-    <div class="contact-block">
-      <p>
-        <strong>FuneralReady.com</strong><br>
-        Van Beard Design<br>
-        Seattle, Washington<br>
-        Email: <a href="mailto:info@funeralready.com">info@funeralready.com</a>
-      </p>
+    <!-- Summary -->
+    <div class="summary-box">
+      <h2>Summary of Key Points</h2>
+      <ul>
+        <li>We collect personal information you provide when you contact us or engage our services.</li>
+        <li>We do not sell your personal information to third parties.</li>
+        <li>We use your information to respond to inquiries and deliver web design services.</li>
+        <li>Payment is processed via PayPal Invoice — we do not store your payment credentials.</li>
+        <li>You have rights regarding your personal information, including the right to access, correct, or delete it.</li>
+        <li>We use industry-standard security measures to protect your data.</li>
+      </ul>
     </div>
-  </div>
 
-  <!-- PART TWO: TERMS OF SERVICE -->
-  <div class="part-divider" id="terms-of-service">
-    <p class="part-label">Part Two</p>
-    <h2>Terms of Service</h2>
-    <p style="color:var(--subink); margin-top:8px;">Last Updated: April 2, 2026</p>
-    <p style="color:var(--subink); margin-top:12px;">By purchasing from FuneralReady.com you agree to these Terms of Service in full. If you do not agree, please do not make a purchase.</p>
-  </div>
+    <!-- Section 1 -->
+    <div class="policy-section">
+      <h2>1. Information We Collect</h2>
+      <h3>Information You Provide</h3>
+      <p>We collect information you voluntarily provide when you:</p>
+      <ul>
+        <li>Fill out the contact form on our site</li>
+        <li>Email or call us directly</li>
+        <li>Engage us for web design services</li>
+      </ul>
+      <p>This information may include: name, email address, phone number, brokerage name, and any message content you submit.</p>
 
-  <div class="policy-section" id="about-product">
-    <h3>1. About the Product</h3>
-    <p>FuneralReady.com sells done-for-you, professionally designed, one-page funeral program PDFs. These are finished digital products created by Van Beard Design, with over 20 years of experience in memorial design.</p>
-    <div class="callout">
-      <p><strong>IMPORTANT:</strong> Our funeral program PDFs are NOT templates. They are complete, unmodifiable documents. No names, dates, photos, or personal details are added. No edits, changes, or customizations are made after purchase. What you see in the sample images is exactly what you receive.</p>
+      <h3>Information Collected Automatically</h3>
+      <p>When you visit our site, certain information may be collected automatically, including:</p>
+      <ul>
+        <li>IP address and browser type</li>
+        <li>Pages visited and time spent on the site</li>
+        <li>Referring website addresses</li>
+        <li>Device information</li>
+      </ul>
+      <p>This information is collected using cookies and similar tracking technologies. You can control cookie settings through your browser.</p>
+
+      <h3>Payment Information</h3>
+      <p>Payment for services is processed via PayPal Invoice. We do not store your credit card number or payment credentials on our servers. Please review PayPal's privacy policy for information on how payment data is handled.</p>
     </div>
-  </div>
 
-  <div class="policy-section">
-    <h3>2. Digital Product — No Physical Goods</h3>
-    <p>All products sold on FuneralReady.com are digital downloads. No physical items are shipped. Upon completion of payment through Ko-fi, your print-ready PDF is available for immediate download. FuneralReady.com is not responsible for printing costs, paper quality choices, or print results obtained at third-party printing services.</p>
-  </div>
-
-  <div class="policy-section" id="no-refunds">
-    <h3>3. No Refund Policy</h3>
-    <p>Due to the instant digital nature of our product, all sales are final. We do not offer refunds, exchanges, or credits once a purchase has been completed and the PDF has been made available for download.</p>
-    <p>We strongly encourage all customers to review the sample program images carefully before purchasing. By completing your purchase, you confirm that you have reviewed the sample, understand that the product is unmodifiable, and agree that no refund will be issued.</p>
-    <p>If you have questions about the product before purchasing, please contact us at <a href="mailto:info@funeralready.com">info@funeralready.com</a> before completing your transaction.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>4. No Modifications or Customizations</h3>
-    <p>FuneralReady.com does not offer modifications, customizations, revisions, or changes to any sold digital product. The PDF is delivered exactly as designed and shown in the sample images. This policy applies without exception.</p>
-    <p>If your family requires a personalized funeral program with your loved one's name, photo, obituary, and custom details, please contact us at <a href="mailto:info@funeralready.com">info@funeralready.com</a> before purchasing to inquire about custom design services, which are offered separately at a different price point.</p>
-  </div>
-
-  <div class="policy-section" id="license">
-    <h3>5. License and Permitted Use</h3>
-    <p>Upon purchase, FuneralReady.com grants you a single-use, non-exclusive, non-transferable license to:</p>
-    <ul>
-      <li>Download the PDF for your personal, non-commercial use</li>
-      <li>Print the PDF for use at a single funeral or memorial service</li>
-    </ul>
-    <p>You may <strong>NOT</strong>:</p>
-    <ul>
-      <li>Resell, redistribute, sublicense, or share the PDF with others for commercial purposes</li>
-      <li>Claim the design as your own original work</li>
-      <li>Use the PDF for any purpose other than a personal memorial service</li>
-      <li>Reproduce or distribute the PDF in modified or unmodified form for profit</li>
-    </ul>
-    <p>The design, content, and layout of all FuneralReady.com products remain the intellectual property of Van Beard Design and are protected by United States copyright law.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>6. Printing Guidance</h3>
-    <p>FuneralReady.com provides printing recommendations as a courtesy. We recommend printing on a minimum of 32lb white paper to prevent bleed-through due to the program's full-color header. FuneralReady.com is not responsible for print quality, paper selection, or costs incurred at any print service provider.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>7. Accuracy of Product Description</h3>
-    <p>We make every effort to accurately display and describe our digital products. The sample images shown on FuneralReady.com and our Ko-fi store accurately represent the content and design of the PDF you will receive. Colors may vary slightly depending on your monitor settings and printer calibration.</p>
-  </div>
-
-  <div class="policy-section" id="intellectual-property">
-    <h3>8. Intellectual Property</h3>
-    <p>All content on FuneralReady.com — including but not limited to the funeral program design, written content, poem, life summary, Order of Service, and website design — is the exclusive intellectual property of Van Beard Design and is protected under United States copyright law.</p>
-    <p>The poem <em>"Gentle Wings"</em> included in our funeral program is an original work created by Van Beard Design and may not be reproduced, distributed, or published outside of the purchased single-use license without written permission.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>9. Disclaimer of Warranties</h3>
-    <p>FuneralReady.com provides its digital products "as is" without warranties of any kind, express or implied. We do not warrant that the product will meet every family's specific needs, preferences, or religious requirements beyond what is described in our product listing.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>10. Limitation of Liability</h3>
-    <p>To the fullest extent permitted by law, FuneralReady.com and Van Beard Design shall not be liable for any indirect, incidental, special, or consequential damages arising from the purchase or use of our digital products, including but not limited to printing errors, dissatisfaction with generic content, or technical difficulties downloading the file.</p>
-    <p>Our total liability to you for any claim arising from a purchase shall not exceed the amount you paid for the product ($47).</p>
-  </div>
-
-  <div class="policy-section" id="governing-law">
-    <h3>11. Governing Law</h3>
-    <p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Washington, United States, without regard to its conflict of law provisions. Any disputes arising under these terms shall be resolved in the courts located in King County, Washington.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>12. Changes to These Terms</h3>
-    <p>FuneralReady.com reserves the right to update these Terms of Service at any time. Changes will be posted on our website with a revised effective date. Purchases made before any changes take effect are governed by the terms in effect at the time of purchase.</p>
-  </div>
-
-  <div class="policy-section">
-    <h3>13. Contact Us</h3>
-    <div class="contact-block">
-      <p>
-        <strong>FuneralReady.com</strong><br>
-        Van Beard Design<br>
-        Seattle, Washington<br>
-        Email: <a href="mailto:info@funeralready.com">info@funeralready.com</a>
-      </p>
+    <!-- Section 2 -->
+    <div class="policy-section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Respond to your inquiries and service requests</li>
+        <li>Deliver and manage web design services</li>
+        <li>Send project updates and invoices</li>
+        <li>Improve our site and service offerings</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+      <p>We will not use your information for any purpose not described in this Privacy Policy without first obtaining your consent.</p>
     </div>
+
+    <!-- Section 3 -->
+    <div class="policy-section">
+      <h2>3. How We Share Your Information</h2>
+      <p>We do not sell, trade, or rent your personal information to third parties. We may share your information in the following limited circumstances:</p>
+
+      <h3>Service Providers</h3>
+      <p>We may share your information with trusted third-party service providers who assist us in operating our site and conducting our business, including:</p>
+      <ul>
+        <li>PayPal (payment processing)</li>
+        <li>Formspree (contact form processing)</li>
+        <li>Professional cloud hosting provider (website hosting)</li>
+      </ul>
+      <p>These providers are contractually obligated to keep your information confidential and use it only for the services they provide to us.</p>
+
+      <h3>Legal Requirements</h3>
+      <p>We may disclose your information if required to do so by law, or if we believe in good faith that such action is necessary to comply with legal process, protect our rights, or protect the safety of others.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="policy-section">
+      <h2>4. Cookies and Tracking Technologies</h2>
+      <p>Our site may use cookies and similar tracking technologies to enhance your browsing experience. Types of cookies we may use:</p>
+      <ul>
+        <li>Essential cookies: Required for the site to function properly</li>
+        <li>Analytics cookies: Help us understand how visitors interact with our site</li>
+        <li>Preference cookies: Remember your settings and preferences</li>
+      </ul>
+      <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of our site may not function properly if cookies are disabled.</p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="policy-section">
+      <h2>5. Data Retention</h2>
+      <p>We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. Specifically:</p>
+      <ul>
+        <li>Client project information is retained for a minimum of 7 years for tax and accounting purposes</li>
+        <li>Contact form submissions are retained for 2 years</li>
+        <li>Marketing preferences are retained until you opt out</li>
+      </ul>
+      <p>When we no longer need your information, we will securely delete or anonymize it.</p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="policy-section">
+      <h2>6. Security of Your Information</h2>
+      <p>We implement reasonable administrative, technical, and physical security measures to protect your personal information from unauthorized access, use, or disclosure. These measures include:</p>
+      <ul>
+        <li>SSL/TLS encryption for data transmitted to and from our site</li>
+        <li>Secure payment processing through PayPal</li>
+        <li>Limited access to personal information by authorized personnel only</li>
+      </ul>
+      <p>However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee its absolute security.</p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="policy-section">
+      <h2>7. Your Privacy Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+      <ul>
+        <li>Right to Access: Request a copy of the personal information we hold about you</li>
+        <li>Right to Correction: Request that we correct inaccurate or incomplete information</li>
+        <li>Right to Deletion: Request that we delete your personal information</li>
+        <li>Right to Opt-Out: Opt out of any marketing communications at any time</li>
+        <li>Right to Data Portability: Request your data in a portable format</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us using the information provided below. We will respond to your request within 30 days.</p>
+
+      <h3>California Residents</h3>
+      <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information is collected, the right to delete personal information, and the right to opt-out of the sale of personal information. We do not sell personal information.</p>
+
+      <h3>Washington State Residents</h3>
+      <p>Washington State residents have rights under the Washington My Health MY Data Act. For questions about your rights, please contact us directly.</p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="policy-section">
+      <h2>8. Children's Privacy</h2>
+      <p>Our site is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately and we will delete such information.</p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="policy-section">
+      <h2>9. Third-Party Websites</h2>
+      <p>Our site may contain links to third-party websites. We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies. This Privacy Policy applies solely to information collected by Van Beard Design.</p>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="policy-section">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+      <p>Your continued use of our site after any changes to this Privacy Policy constitutes your acceptance of the revised policy.</p>
+    </div>
+
+    <!-- Contact Box -->
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <p>If you have questions or requests regarding this Privacy Policy, please contact us:</p>
+      <p><strong style="color:var(--white);">Van Beard Design</strong></p>
+      <p>Tukwila, WA</p>
+      <p>Email: <a href="mailto:van@websitesbyvan.com">van@websitesbyvan.com</a></p>
+      <p>Phone: <a href="tel:12064860508">(206) 486-0508</a></p>
+      <p>Website: <a href="../">WebsitesByVan.com</a></p>
+    </div>
+
   </div>
 
-  <!-- ACKNOWLEDGMENT -->
-  <div style="background:var(--accent2); border:1px solid var(--rule); border-radius:8px; padding:24px 28px; margin-top:48px; text-align:center;">
-    <p style="color:var(--subink); font-size:14px;">By purchasing from FuneralReady.com you acknowledge that you have read, understood, and agreed to both the Privacy Policy and Terms of Service contained in this document.</p>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">WebsitesByVan</div>
+    <p class="footer-copy">© 2026 Van Beard Design · Tukwila, WA · <a href="tel:12064860508">(206) 486-0508</a></p>
+  </footer>
 
-</div><!-- /content -->
-
-<footer>
-  <p>© 2026 FuneralReady.com · Van Beard Design · Seattle, Washington &nbsp;·&nbsp; <a href="../">Return to FuneralReady.com</a></p>
-</footer>
+  <div class="gold-bar"></div>
 
 </body>
 </html>
