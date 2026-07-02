@@ -4,7 +4,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="If Your Family Hasn't Done This Before a Funeral, It Could Cost Thousands" />
   <meta property="og:description" content="Four professionally designed, print-ready memorial programs. One free. Three at $47 each. Instant download. No family should say goodbye without a program." />
-  <meta property="og:image" content="https://funeralready.com/images/funeralready-preview.png" />
+  <meta property="og:image" content="funeralready-preview.png" />
   <meta property="og:url" content="https://funeralready.com/" />
   <link rel="canonical" href="https://funeralready.com/" />
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -13,13 +13,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="FuneralReady" />
   <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <meta name="twitter:card" content="summary_large_image" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="bd1Q3qWNczIOuKOykep6mgEV-9eoxMK6kZu3Mz0ojQg" />
-  <title>Done-For-You Funeral Programs | Instant Download | FuneralReady.com</title>
+  <title>No Family Should Say Goodbye Without a Program | FuneralReady</title>
   <meta name="description" content="Done-for-you funeral programs from FuneralReady.com — one free for families in need, three at $47. Instant download. 20+ years of memorial design experience.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
@@ -595,7 +595,7 @@
   "@type": "Article",
   "headline": "If Your Family Hasn't Done This Before a Funeral, It Could Cost Thousands",
   "description": "Four professionally designed, print-ready memorial programs. One free. Three at $47 each. Instant download. No family should say goodbye without a program.",
-  "image": "https://funeralready.com/images/funeralready-preview.png",
+  "image": "https://funeralready.com/funeralready-preview.png",
   "author": {
     "@type": "Person",
     "name": "Van Beard",
@@ -606,7 +606,7 @@
     "name": "FuneralReady.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://funeralready.com/images/funeralready-preview.png"
+      "url": "https://funeralready.com/funeralready-preview.png"
     }
   },
   "mainEntityOfPage": {
@@ -629,7 +629,7 @@
         "@type": "Product",
         "name": "Forever in Our Hearts",
         "description": "Complete, print-ready memorial program. Design, scripture, and tribute text all included. Nothing to edit, download and print immediately.",
-        "image": "https://funeralready.com/images/funeralready-preview.png",
+        "image": "https://funeralready.com/funeralready-preview.png",
         "url": "https://ko-fi.com/s/b12810569d",
         "offers": {
           "@type": "Offer",
@@ -647,7 +647,7 @@
         "@type": "Product",
         "name": "In Loving Memory",
         "description": "Complete, print-ready one-page memorial program. Professional design, scripture, and text all included.",
-        "image": "https://funeralready.com/images/funeralready-preview.png",
+        "image": "https://funeralready.com/funeralready-preview.png",
         "url": "https://ko-fi.com/s/9d491916eb",
         "offers": {
           "@type": "Offer",
@@ -665,7 +665,7 @@
         "@type": "Product",
         "name": "A Life Well Lived",
         "description": "Complete, print-ready one-page memorial program. Warm, dignified design with tribute text included.",
-        "image": "https://funeralready.com/images/funeralready-preview.png",
+        "image": "https://funeralready.com/funeralready-preview.png",
         "url": "https://ko-fi.com/s/15bd891e77",
         "offers": {
           "@type": "Offer",
@@ -683,7 +683,7 @@
         "@type": "Product",
         "name": "Celebrating a Life",
         "description": "Complete, print-ready one-page memorial program. Joyful, uplifting design with tribute text included.",
-        "image": "https://funeralready.com/images/funeralready-preview.png",
+        "image": "https://funeralready.com/funeralready-preview.png",
         "url": "https://ko-fi.com/s/0af85f033b",
         "offers": {
           "@type": "Offer",
@@ -743,7 +743,7 @@
 <!-- HERO -->
 <header class="hero" id="top">
   <p class="hero-eyebrow">Funeral Planning · What Families Need to Know</p>
-  <h1>No Family Should Say Goodbye Without a Funeral Program</h1>
+  <h1>If Your Family Hasn't Done This Before a Funeral, <em>It Could Cost Thousands</em></h1>
   <p class="hero-deck">Most families only learn this after it's too late. Here's what 20 years of memorial design taught me — and the simple steps that change everything.</p>
   <div class="hero-meta">
     <span>By <strong>Van Beard</strong>, Founder of FuneralReady.com</span>
@@ -751,7 +751,74 @@
     <span>6-minute read</span>
   </div>
   <a class="hero-pill-cta" href="https://www.gofundme.com/f/funeralready" target="_blank">♥ Support FuneralReady</a>
-  <p class="hero-scripture">"God loves a cheerful giver." <cite>— 2 Corinthians 9:7</cite></p>
+  <p class="hero-scripture" id="daily-verse"></p>
+  <script>
+    var verses = [
+      {text: "\u201cGod loves a cheerful giver.\u201d", ref: "2 Corinthians 9:7"},
+      {text: "\u201cThe Lord is my shepherd; I shall not want.\u201d", ref: "Psalm 23:1"},
+      {text: "\u201cBlessed are those who mourn, for they shall be comforted.\u201d", ref: "Matthew 5:4"},
+      {text: "\u201cHe heals the brokenhearted and binds up their wounds.\u201d", ref: "Psalm 147:3"},
+      {text: "\u201cI am the resurrection and the life. Whoever believes in me, though he die, yet shall he live.\u201d", ref: "John 11:25"},
+      {text: "\u201cPeace I leave with you; my peace I give to you.\u201d", ref: "John 14:27"},
+      {text: "\u201cThe Lord is close to the brokenhearted and saves those who are crushed in spirit.\u201d", ref: "Psalm 34:18"},
+      {text: "\u201cDo not let your hearts be troubled. You believe in God; believe also in me.\u201d", ref: "John 14:1"},
+      {text: "\u201cFor everything there is a season, and a time for every matter under heaven.\u201d", ref: "Ecclesiastes 3:1"},
+      {text: "\u201cA time to weep, and a time to laugh; a time to mourn, and a time to dance.\u201d", ref: "Ecclesiastes 3:4"},
+      {text: "\u201cCome to me, all who labor and are heavy laden, and I will give you rest.\u201d", ref: "Matthew 11:28"},
+      {text: "\u201cEven though I walk through the valley of the shadow of death, I will fear no evil, for you are with me.\u201d", ref: "Psalm 23:4"},
+      {text: "\u201cFor I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.\u201d", ref: "Jeremiah 29:11"},
+      {text: "\u201cThe Lord himself goes before you and will be with you; he will never leave you nor forsake you.\u201d", ref: "Deuteronomy 31:8"},
+      {text: "\u201cGrief is the price we pay for love.\u201d\u2014 and love is a gift from God.", ref: "1 John 4:8"},
+      {text: "\u201cCast your burden on the Lord, and he will sustain you.\u201d", ref: "Psalm 55:22"},
+      {text: "\u201cHe will wipe away every tear from their eyes, and death shall be no more.\u201d", ref: "Revelation 21:4"},
+      {text: "\u201cFor God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.\u201d", ref: "John 3:16"},
+      {text: "\u201cThe Lord is my light and my salvation; whom shall I fear?\u201d", ref: "Psalm 27:1"},
+      {text: "\u201cI can do all things through him who strengthens me.\u201d", ref: "Philippians 4:13"},
+      {text: "\u201cAnd we know that for those who love God all things work together for good.\u201d", ref: "Romans 8:28"},
+      {text: "\u201cMourning may last for the night, but joy comes in the morning.\u201d", ref: "Psalm 30:5"},
+      {text: "\u201cDo not fear, for I am with you; do not be afraid, for I am your God.\u201d", ref: "Isaiah 41:10"},
+      {text: "\u201cBlessed be the God and Father of our Lord Jesus Christ, the Father of mercies and God of all comfort.\u201d", ref: "2 Corinthians 1:3"},
+      {text: "\u201cThose who hope in the Lord will renew their strength.\u201d", ref: "Isaiah 40:31"},
+      {text: "\u201cSurely goodness and mercy shall follow me all the days of my life.\u201d", ref: "Psalm 23:6"},
+      {text: "\u201cIn my Father\u2019s house are many rooms. I go to prepare a place for you.\u201d", ref: "John 14:2"},
+      {text: "\u201cLove never ends.\u201d", ref: "1 Corinthians 13:8"},
+      {text: "\u201cBe still, and know that I am God.\u201d", ref: "Psalm 46:10"},
+      {text: "\u201cThe righteous has a refuge when he dies.\u201d", ref: "Proverbs 14:32"},
+      {text: "\u201cGod is our refuge and strength, a very present help in trouble.\u201d", ref: "Psalm 46:1"}
+    ];
+    // Use verse list as fallback, but try to fetch from API
+    var today = new Date();
+    var dayIndex = (today.getFullYear() * 365 + today.getMonth() * 31 + today.getDate()) % verses.length;
+    var fallback = verses[dayIndex];
+
+    // API verse references matching our list
+    var apiRefs = [
+      "2 Corinthians 9:7","Psalm 23:1","Matthew 5:4","Psalm 147:3",
+      "John 11:25","John 14:27","Psalm 34:18","John 14:1",
+      "Ecclesiastes 3:1","Ecclesiastes 3:4","Matthew 11:28","Psalm 23:4",
+      "Jeremiah 29:11","Deuteronomy 31:8","1 John 4:8","Psalm 55:22",
+      "Revelation 21:4","John 3:16","Psalm 27:1","Philippians 4:13",
+      "Romans 8:28","Psalm 30:5","Isaiah 41:10","2 Corinthians 1:3",
+      "Isaiah 40:31","Psalm 23:6","John 14:2","1 Corinthians 13:8",
+      "Psalm 46:10","Proverbs 14:32","Psalm 46:1"
+    ];
+
+    var apiRef = encodeURIComponent(apiRefs[dayIndex]);
+
+    fetch('https://bible-api.com/' + apiRef + '?translation=kjv')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data && data.text) {
+          var text = data.text.trim().replace(/\n/g, ' ');
+          document.getElementById('daily-verse').innerHTML = '\u201c' + text + '\u201d <cite>\u2014 ' + data.reference + ' (KJV)</cite>';
+        } else {
+          document.getElementById('daily-verse').innerHTML = fallback.text + ' <cite>\u2014 ' + fallback.ref + '</cite>';
+        }
+      })
+      .catch(function() {
+        document.getElementById('daily-verse').innerHTML = fallback.text + ' <cite>\u2014 ' + fallback.ref + '</cite>';
+      });
+  </script>
 </header>
 <!-- STAT BAR -->
 <div class="stat-bar">
@@ -772,7 +839,7 @@
 </div>
 <!-- HERO IMAGE -->
 <div style="max-width: 780px; margin: 0 auto; padding: 32px 20px 0; margin-bottom: 0;">
-  <img src="images/funeralready-preview.png" alt="Funeral Ready Programs — No Family Should Say Goodbye Without a Program" style="width: 100%; border-radius: 8px; display: block;" />
+  <img src="funeralready-preview.png" alt="Funeral Ready Programs — No Family Should Say Goodbye Without a Program" style="width: 100%; border-radius: 8px; display: block;" />
 </div>
 <!-- ARTICLE -->
 <article class="article" style="padding-top: 0px;">
